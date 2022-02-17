@@ -1,0 +1,119 @@
+/* typo */
+
+@font-face{
+    font-family: "Inria"; 
+    src: url(../src/fonts/InriaSerif-Light.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "InriaBold";
+    src: url(../src/fonts/InriaSans-Bold.otf) format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "InriaSans";
+    src: url(../src/fonts/InriaSans-Light.otf) format("opentype");
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "InriaRegular"; 
+    src: url(../src/fonts/InriaSans-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color:black;
+    background-color: aliceblue;
+    overflow-x: 0;
+}
+h1{
+    font-size: 30px;
+    font-family: "Inria";
+    color: teal;
+    text-transform: uppercase;
+    position: fixed;
+    top:50px;
+    left: 50px;
+}
+h1 span{
+    font-size: 35px;
+    font-family: "InriaBold";
+    background-color: antiquewhite;
+    color: hotpink;
+    border-radius: 10px;
+}
+
+main{
+    font-family: "InriaRegular";
+   position: fixed;
+    bottom:50px;
+   left: 50px; 
+   max-width: 600px;
+   max-height: 600px;
+   font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.images2 img{
+    margin: 20px;
+    width: 125px;
+}
+
+.images{
+    font-family: "InriaBold";
+    width: 100%;
+    padding:10px 10px 10px calc(100vw - 400px);
+    
+}
+.images img{
+    width: 100%;
+    margin-bottom: 20vh;
+}
+.images img:first-of-type{
+   margin-top:10vh;
+}
+
+.images video{
+    width: 100%;
+    margin-bottom: 20vh;
+}
+
+h2{
+    font-size: 20px;
+    font-family: "InriaBold";
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.article{
+    font-size: 15px;
+    font-family: "InriaSans";
+    margin-bottom: 20vh;
+}
+
+a{
+    font-size: 5px;
+
+}
+
+.article1{
+    font-size: 15px;
+    font-family: "InriaSans";
+    margin-top: -20vh;
+    margin-bottom: 20vh;
+}

@@ -1,0 +1,174 @@
+/* FONTS */
+
+@font-face{
+    font-family: "Inria"; 
+    src: url(../src/fonts/InriaSerif-Light.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "InriaSans";
+    src: url(../src/fonts/InriaSans-Light.otf) format("opentype");
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "InriaBold";
+    src: url(../src/fonts/InriaSans-Bold.otf) format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: black;
+	background-color: aliceblue;
+	width: 100%;
+	height: 100vh;
+}
+
+/* la partie supérieure avec le titre */
+header {
+	height: 50px;
+	margin-top: 20px;
+	background-color: antiquewhite;
+}
+header h1 {
+	font-family: "Inria";
+	font-size: 40px;
+	line-height: 60px; 
+	margin-left: 20px;
+    color: teal; 	
+}
+
+#titre-animation{
+    font-family: "InriaBold";
+    margin-left: 20px;
+    color: orange;
+    border-radius: 10px;
+    /*animations*/
+    animation-name: carre-anim;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    z-index: 5;
+}
+
+@keyframes carre-anim{
+    /* départ */
+    from{
+        margin-bottom: -60px;
+        color: aliceblue;
+    }
+    /* arrivée */
+    to{
+        margin-bottom: 30px;
+        color: orange;
+    }
+}
+
+/* le contenant des colonnes d'images */
+main {
+	height: calc(100vh - 120px);
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+/* chaque section correspond à une colonne */
+section {
+	width: 25%;
+	height: 470px;
+	position: relative;
+	padding: 20px;
+}
+section a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* figure contient les deux versions de l'image */
+figure {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+section a figure img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+	border-radius: 20px;
+}
+/* on fait passer du bleu au normal en modifier l'opacité */
+.bleu {
+	opacity: 1;
+	transition: all 300ms ease;
+}
+.bleu:hover {
+	opacity: 0;
+	transition: all 300ms ease;
+}
+
+/* titres de mes paragraphes */
+
+section .numero {
+	position: absolute;
+	left: 10px;
+	font-size: 40px;
+	z-index: 5;
+	font-family: "InriaBold";
+    background-color: antiquewhite;
+    color: hotpink;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.texte{
+    font-family: "InriaBold";
+    color: orange;
+	margin-left: 40px;
+}
+
+/* partie comprenant toutes mes ressources */
+
+#ressources{
+	margin-top: -15px;
+	width: 100%;
+    height: 50%;
+    background-color: darkgreen;
+}
+
+h3{
+	margin-top: 20px;
+	height: 10%;
+	font-size: 30px;
+	line-height: 50%;
+	font-family: "Inria";
+	color: hotpink;
+	background-color: darkgreen;
+}
+
+.nomarticle{
+	margin-top: 20px;
+	width: 80%;
+	font-family: "InriaSans";
+	color: aliceblue;
+	margin: 10px;
+}
+
+a{
+	color: black;
+}
+
+
